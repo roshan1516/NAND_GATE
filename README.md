@@ -76,63 +76,9 @@ Case-4 : VA – High & VB – High,VA – High: pMOS1 – OFF;nMOS1 – ON,VB �
 
 
 ## Netlist
+[netlist.txt](https://github.com/roshan1516/NAND_GATE/files/8141902/netlist.txt)
 
 ```
-
-
-*  Generated for: PrimeSim
-*  Design library name: ng_gateftw
-*  Design cell name: ng_gate_tb
-*  Design view name: schematic
-.lib 'saed32nm.lib' TT
-
-*Custom Compiler Version S-2021.09
-*Thu Feb 24 16:39:01 2022
-
-.global gnd!
-********************************************************************************
-* Library          : ng_gateftw
-* Cell             : ng_gate
-* View             : schematic
-* View Search List : hspice hspiceD schematic spice veriloga
-* View Stop List   : hspice hspiceD
-********************************************************************************
-.subckt ng_gate a b gnd_1 vdd vout
-xm1 vout b vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
-xm0 vout a vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
-xm3 net13 b gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
-xm2 vout a net13 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
-.ends ng_gate
-
-********************************************************************************
-* Library          : ng_gateftw
-* Cell             : ng_gate_tb
-* View             : schematic
-* View Search List : hspice hspiceD schematic spice veriloga
-* View Stop List   : hspice hspiceD
-********************************************************************************
-xi0 a b gnd! net6 op ng_gate
-v24 net6 gnd! dc=1.05
-v21 a gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 6u 10u )
-v26 b gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 10u 20u )
-
-.tran '0.1u' '60u' name=tran
-
-.option primesim_remove_probe_prefix = 0
-.probe v(*) i(*) level=1
-.probe tran v(a) v(b) v(op)
-
-.temp 25
-
-
-.option primesim_output=wdf
-
-
-.option parhier = LOCAL
-
-
-.end
-
 ```
 
 ## Conclusion
