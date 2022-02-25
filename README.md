@@ -1,5 +1,5 @@
 # NAND_GATE
-# NAND using 28nm CMOS Technology
+# NAND Gate using 28nm CMOS Technology
   * [Abstract](#abstract)
   * [Reference Circuit Details](#reference-circuit-details)
   * [Reference Circuit Diagram](#reference-circuit-diagram)
@@ -20,11 +20,16 @@
 
 
 ## Abstract
-There are various basic gates like inverter,NAND gate, NOR gate which are extensively used in the designing of the more complex circuits with higher number of transistors such as SRAM cells, MUXs, ADCs and various other circuits. In this paper, we have carried out the modeling of NAND gate and NOR gate at 45 nmtechnology. The modeling includes schematics design,layout design and layout vs schematic (LVS) run of the above gates. Also the simulation results of both the gates are obtained at the same node with rise time, fall time,area,delay and power dissipation (dynamic power and static power). All the processes have been carried out using the Synopsys Custom Compiler tool.
+In this paper I am going to implement NAND gate using CMOS technology and here we will design a NAND gate using a series and parallel connectionof pMOS and nMOS transistors using 28nm technology. Basically, pMOS and nMOS transistors act as ideal switches. The circuit design and implementation will be done using esim and ngspice software. A NAND Gate is a logic gate that produces a low output (0) only if all its inputs are true, and high output (1) otherwise.We can verify the output using circuit waveform. This complete design and implementation is done using CMOS VLSI technology. Also the simulation results of both the gates are obtained at the same node with rise time, fall time,area,delay and power dissipation (dynamic power and static power). All the processes have been carried out using the Synopsys Custom Compiler tool.
 
 ## Reference Circuit Details
 
-Conventional CMOS Full Adder is the most basic full adder implementation techniques. Conventional CMOS Full Adder consists of 28 transistors. A, B and Cin are the inputs and Sum & Cout are the outputs. Static logic provides robustness against noise effects, so automatically provides a reliable operation. Pseudo NMOS pass-transistor logic and reduce the number of transistors required to implement a given logic function but these suffer from static power dissipation. On the other hand, dynamic logic requires less silicon area for implementation of complex function but charge leakage and charge refreshing are required which reduces the frequency of operation. This circuit uses both NMOS and PMOS transistors. In Conventional CMOS Full Adder, there are many leakage paths which lead to more sub threshold leakage.
+The figure 1 shows the 2-input CMOS NAND Gate,to design a 2-input CMOS NAND Gate,two pMOS are connected in parallel and two nMOS are connected in series. 
+Case-1 : VA – Low & VB – Low::As VA and VB both are low, both the pMOS will be ON and both the nMOS will be OFF. The output line will maintain the voltage level at Vdd; so,High.
+Case-2 : VA – Low & VB – High,VA – Low: pMOS1 – ON; nMOS1 – OFF,VB – High: pMOS2 – OFF; nMOS2 – ON.This in turn results the Vout to be maintained at the level of Vdd; so,High.
+Case-3 :VA –High &VB –Low,VA – High: pMOS1 – OFF; nMOS1 – ON,VB – Low: pMOS2 – ON; nMOS2 – OFF,The explanation is similar as case-2. Vout level will be High.
+Case-4 : VA – High & VB – High,VA – High: pMOS1 – OFF;nMOS1 – ON,VB – High: pMOS2 – OFF; nMOS2 – ON;Vout will be discharged; so, Low.
+
 
 ## Reference Circuit Diagram
 ![image](https://user-images.githubusercontent.com/72511316/155567229-ca600174-c3a2-48e6-a41e-a7f7c72d8743.png)
@@ -110,13 +115,6 @@ v24 net6 gnd! dc=1.05
 v21 a gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 6u 10u )
 v26 b gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 10u 20u )
 
-
-
-
-
-
-
-
 .tran '0.1u' '60u' name=tran
 
 .option primesim_remove_probe_prefix = 0
@@ -126,15 +124,10 @@ v26 b gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 10u 20u )
 .temp 25
 
 
-
 .option primesim_output=wdf
 
 
 .option parhier = LOCAL
-
-
-
-
 
 
 .end
@@ -142,23 +135,20 @@ v26 b gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 10u 20u )
 ```
 
 ## Conclusion
-Thus, the addition for a single-bit is achieved using 28T full adder.
+Thus, we designed and simulated a 2 input NAND Gate using Synopsys Custom Compiler using 28nm technology and we observed that when both the inputs are 1 the output is 0.
 
 ## Author
 Roshan Kumar, National Institute of Science and Technoology,Berhampur.
+
 ## Acknowledgement
 1. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
 2. Chinmaya Panda, IIT Hyderabad
 3. Sameer Durgoji, NIT Karnataka
 4. [Synopsys Team/Company](https://www.synopsys.com/)
 5. https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/
+
 ## References
-1)Analysis and Performance Evaluation of 1-bit Full Adder Using Different Topologies
-http://pnrsolution.org/Datacenter/Vol5/Issue1/26.pdf
-
-2)Power and Delay Comparison in between Different types of Full Adder Circuits
-https://www.ijareeie.com/upload/september/7_Power%20and%20Delay%20Comparison.pdf
-
-3)Youtube Video - https://www.youtube.com/watch?v=AXU_J4wr_yA
-  
+1) http://cmosedu.com/jbaker/courses/ee421L/f18/students/sendad1/lab6/lab6.htm
+2) https://www.electrical4u.com/nand-gate/ 
+3) Sung-Mo Kang, Yusuf Leblebici. “CMOS Digital Integrated Circuits (Analysis and Design),” 3rd edition, Tata McGraw-Hill.
 
