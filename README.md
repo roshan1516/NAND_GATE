@@ -7,7 +7,6 @@
   * [Desirable Truth Table](#desirable-truth-table)
   * [Tools Used](#tools-used)
 - [Simulation in Synopsys](#simulation-in-synopsys)
-- * [NAND Gate Symbol](NAND-Gate-Symbol)
   * [Parameters set for Voltage Source for Input A](#parameters-set-for-voltage-source-for-input-a)
   * [Parameters set for Voltage Source for Input B](#parameters-set-for-voltage-source-for-input-b)
   * [Transient Settings](#transient-settings)
@@ -77,10 +76,8 @@ Case-4 : VA – High & VB – High,VA – High: pMOS1 – OFF;nMOS1 – ON,VB �
 
 
 ## Netlist
-[netlist.txt](https://github.com/roshan1516/NAND_GATE/files/8141902/netlist.txt)
 
-```
-```
+ [netlist.txt](https://github.com/roshan1516/NAND_GATE/files/8141902/netlist.txt)
 
 ## Conclusion
 Thus, we designed and simulated a 2 input NAND Gate using Synopsys Custom Compiler using 28nm technology and we observed that when both the inputs are 1 the output is 0.
