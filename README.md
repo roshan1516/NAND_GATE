@@ -77,7 +77,7 @@ Case-4 : VA – High & VB – High,VA – High: pMOS1 – OFF;nMOS1 – ON,VB �
 
 ## Netlist
 
- [netlist.txt](https://github.com/roshan1516/NAND_GATE/files/8141902/netlist.txt)
+Refer to the netlist of the circuits here: [netlist.txt](https://github.com/roshan1516/NAND_GATE/files/8141902/netlist.txt)
 
 ## Conclusion
 Thus, we designed and simulated a 2 input NAND Gate using Synopsys Custom Compiler using 28nm technology and we observed that when both the inputs are 1 the output is 0.
