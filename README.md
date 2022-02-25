@@ -76,6 +76,7 @@ Case-4 : VA – High & VB – High,VA – High: pMOS1 – OFF;nMOS1 – ON,VB �
 
 
 ## Netlist
+
 ```
 
 
