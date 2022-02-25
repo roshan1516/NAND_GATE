@@ -20,7 +20,7 @@
 
 
 ## Abstract
-In this paper I am going to implement NAND gate using CMOS technology and here we will design a NAND gate using a series and parallel connectionof pMOS and nMOS transistors using 28nm technology. Basically, pMOS and nMOS transistors act as ideal switches. The circuit design and implementation will be done using esim and ngspice software. A NAND Gate is a logic gate that produces a low output (0) only if all its inputs are true, and high output (1) otherwise.We can verify the output using circuit waveform. This complete design and implementation is done using CMOS VLSI technology. Also the simulation results of both the gates are obtained at the same node with rise time, fall time,area,delay and power dissipation (dynamic power and static power). All the processes have been carried out using the Synopsys Custom Compiler tool.
+In this paper I am going to implement NAND gate using CMOS technology and here we will design a NAND gate using a series and parallel connection of pMOS and nMOS transistors using 28nm technology. Basically, pMOS and nMOS transistors act as ideal switches. The circuit design and implementation will be done using esim and ngspice software. A NAND Gate is a logic gate that produces a low output (0) only if all its inputs are true, and high output (1) otherwise.We can verify the output using circuit waveform. This complete design and implementation is done using CMOS VLSI technology. Also the simulation results of both the gates are obtained at the same node with rise time, fall time,area,delay and power dissipation (dynamic power and static power). All the processes have been carried out using the Synopsys Custom Compiler tool.
 
 ## Reference Circuit Details
 
