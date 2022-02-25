@@ -10,7 +10,7 @@
   * [Parameters set for Voltage Source for Input A](#parameters-set-for-voltage-source-for-input-a)
   * [Parameters set for Voltage Source for Input B](#parameters-set-for-voltage-source-for-input-b)
   * [Transient Settings](#transient-settings)
-  * [Schematic of NAND_Gate using the above Blocks](#schematic-of-full_adder-using-the-above-blocks)
+  * [Schematic of NAND_Gate using the above Blocks](#schematic-of-NAND_Gate-using-the-above-blocks)
   * [Output Waveform](#output-waveform)
   * [Netlist](#netlist)
   * [Conclusion](#conclusion)
