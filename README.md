@@ -7,6 +7,7 @@
   * [Desirable Truth Table](#desirable-truth-table)
   * [Tools Used](#tools-used)
 - [Simulation in Synopsys](#simulation-in-synopsys)
+- * [NAND Gate Symbol](NAND-Gate-Symbol)
   * [Parameters set for Voltage Source for Input A](#parameters-set-for-voltage-source-for-input-a)
   * [Parameters set for Voltage Source for Input B](#parameters-set-for-voltage-source-for-input-b)
   * [Transient Settings](#transient-settings)
