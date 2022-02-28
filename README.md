@@ -7,7 +7,7 @@
   * [Desirable Truth Table](#desirable-truth-table)
   * [Tools Used](#tools-used)
 - [Simulation in Synopsys](#simulation-in-synopsys)
-  * [NAND_Gate_Block](#NAND_-Gate_-Block)
+  * [NAND_Gate_Block](#NAND-Gate-Block)
   * [Parameters set for Voltage Source for Input A](#parameters-set-for-voltage-source-for-input-a)
   * [Parameters set for Voltage Source for Input B](#parameters-set-for-voltage-source-for-input-b)
   * [Transient Settings](#transient-settings)
@@ -55,7 +55,7 @@ Case-4 : VA – High & VB – High,VA – High: pMOS1 – OFF;nMOS1 – ON,VB �
  The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
 
 # Simulation in Synopsys
-## NAND_Gate_Block
+## NAND Gate Block
 ![Screenshot 2022-02-24 011629](https://user-images.githubusercontent.com/72511316/155566303-41e980f4-8bfe-4acd-9ba7-afc749a36f4b.png)
 ![Screenshot 2022-02-24 215736](https://user-images.githubusercontent.com/72511316/155566387-c41768c9-0654-4e99-becf-080c523cbb06.png)
 
