@@ -16,7 +16,7 @@
   * [Netlist](#netlist)
   * [Conclusion](#conclusion)
   * [Author](#author)
-  * [Acknowledgement](#acknowlegement)
+  * [Acknowledgement](#Acknowledgement)
   * [References](#references)
 
 
