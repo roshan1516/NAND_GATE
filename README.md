@@ -21,7 +21,7 @@
 
 
 ## Abstract
-In this paper I am going to implement NAND gate using CMOS technology and here we will design a NAND gate using a series and parallel connection of pMOS and nMOS transistors using 28nm technology. Basically, pMOS and nMOS transistors act as ideal switches. The circuit design and implementation will be done using esim and ngspice software. A NAND Gate is a logic gate that produces a low output (0) only if all its inputs are true, and high output (1) otherwise.We can verify the output using circuit waveform. This complete design and implementation is done using CMOS VLSI technology. Also the simulation results of both the gates are obtained at the same node with rise time, fall time,area,delay and power dissipation (dynamic power and static power). All the processes have been carried out using the Synopsys Custom Compiler tool.
+We will implement a 2 input-NAND gate using CMOS technology using a series and parallel connection of pMOS and nMOS transistors using 28nm technology. Basically, pMOS and nMOS transistors act as ideal switches. The circuit design and implementation will be done using esim and ngspice software. A NAND Gate is a logic gate that produces a low output (0) only if all its inputs are true, and high output (1) otherwise.We can verify the output using circuit waveform. This complete design and implementation is done using CMOS VLSI technology. Also the simulation results of both the gates are obtained at the same node with rise time, fall time and delay. All the processes have been carried out using the Synopsys Custom Compiler tool.
 
 ## Reference Circuit Details
 
@@ -43,16 +43,16 @@ Case-4 : VA – High & VB – High,VA – High: pMOS1 – OFF;nMOS1 – ON,VB �
 
 ## Tools Used:
 • Synopsys Custom Compiler:
- The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
+The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
  
  ![custom_compiler](https://user-images.githubusercontent.com/59500283/155473715-c6a1fd5b-71c7-4655-936a-5fe3befabfd8.png)
 
 
 • Synopsys Primewave:
- PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.
+PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.
 
 • Synopsys 28nm PDK:
- The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
+The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
 
 # Simulation in Synopsys
 ## NAND Gate Block
