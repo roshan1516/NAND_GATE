@@ -84,7 +84,7 @@ Refer to the netlist of the circuits here: [netlist.txt](https://github.com/rosh
 Thus, we designed and simulated a 2 input NAND Gate using Synopsys Custom Compiler using 28nm technology and we observed that when both the inputs are 1 the output is 0.
 
 ## Author
-Roshan Kumar, National Institute of Science and Technoology,Berhampur.
+Roshan Kumar, National Institute of Science and Technology,Berhampur.
 
 ## Acknowledgement
 1. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
