@@ -1,4 +1,4 @@
-# NAND_GATE
+# NAND GATE
 # NAND Gate using 28nm CMOS Technology
   * [Abstract](#abstract)
   * [Reference Circuit Details](#reference-circuit-details)
