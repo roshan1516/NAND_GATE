@@ -7,7 +7,7 @@
   * [Desirable Truth Table](#desirable-truth-table)
   * [Tools Used](#tools-used)
 - [Simulation in Synopsys](#simulation-in-synopsys)
-  * [NAND_Gate_Block](https://github.com/roshan1516/NAND_GATE/edit/main/README.md#nand_gate_block#NAND_Gate_Block)
+  * [NAND_Gate_Block](#NAND_-Gate_-Block)
   * [Parameters set for Voltage Source for Input A](#parameters-set-for-voltage-source-for-input-a)
   * [Parameters set for Voltage Source for Input B](#parameters-set-for-voltage-source-for-input-b)
   * [Transient Settings](#transient-settings)
